@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+/* PARRAFOS */
+p {
+	text-align: center;
+	color: rgb(0, 128, 192);
+	font-family: Open Sans, sans-serif;
+}
+/* HEADERS */
+h1, h2 {
+	text-align: center;
+	color: rgb(128, 128, 192);
+	font-family: Arial, Helvetica, sans-serif;
+}
