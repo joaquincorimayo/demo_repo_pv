@@ -59,6 +59,8 @@ public class Docente {
 	public void setTelefono(int telefono) {
 		this.telefono = telefono;
 	}
+	
+	
 
 	@Override
 	public String toString() {

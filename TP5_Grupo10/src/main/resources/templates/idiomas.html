@@ -64,24 +64,16 @@
 						<th scope="col">Semanas</th>
 					</tr>
 				</thead>
+				
 				<tbody>
-					<tr>
-						<td>FRANCÉS</td>
-						<td>29 sept</td>
-						<td>Mañana</td>
-						<td>22 dic</td>
-						<td>Virtual</td>
-						<td>14</td>
-					</tr>
-					<tr>
-						<!-- MOMENTANEAMENTE MUESTRA UNA SOLA PROPIEDAD DEL OBJETO, POSIBLEMENTE ARME UN ARRAYLIST PARA AGRUPAR EN UNA SOLA COLECCION LOS ELEMENTOS (5) -->
-						<td th:text=${primerIdioma.titulo}></td>
-						<td>29 sept</td>
-						<td>Mañana</td>
-						<td>22 dic</td>
-						<td>Virtual</td>
-						<td>14</td>
-					</tr>
+					<tr th:each="curso:${cursos}">
+				        <td th:text="${curso.titulo}"></td>
+				        <td th:text="${#temporals.format(curso.fechaInicio, 'dd-MM-yyyy')}"></td>
+				        <td th:text="${#temporals.format(curso.fechaFin, 'dd-MM-yyyy')}"></td>
+				        <td th:text="${curso.modalidad}"></td>
+				        <td th:text="${curso.docente.nombre}"></td>
+<!-- 						Problemas al querer obtener la duracion de semanas. (Solucionar)  -->
+				    </tr>
 				</tbody>
 			</table>
 		</section>

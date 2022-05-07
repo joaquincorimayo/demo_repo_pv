@@ -16,8 +16,7 @@ public class Curso {
 
 	}
 
-	public Curso(int codigo,
-			String titulo, String categoria, LocalDate fechaFin, LocalDate fechaInicio,
+	public Curso(int codigo, String titulo, String categoria, LocalDate fechaFin, LocalDate fechaInicio,
 			int cantidadHoras, String modalidad, Docente docente) {
 		super();
 		this.codigo = codigo;
