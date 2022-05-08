@@ -1,6 +1,7 @@
 package ar.edu.unju.fi.tp5.model;
 
 import java.time.LocalDate;
+//import java.time.Period;
 
 public class Curso {
 	private int codigo;
@@ -11,7 +12,7 @@ public class Curso {
 	private int cantidadHoras;
 	private String modalidad;
 	private Docente docente;
-
+	private int dos;
 	public Curso() {
 
 	}
@@ -27,6 +28,16 @@ public class Curso {
 		this.cantidadHoras = cantidadHoras;
 		this.modalidad = modalidad;
 		this.docente = docente;
+//		Period period = Period.between(fechaInicio, fechaFin);
+		this.dos = 2;
+	}
+	
+	public int getDos() {
+		return dos;
+	}
+
+	public void setDos(int dos) {
+		this.dos = dos;
 	}
 
 	public int getCodigo() {
