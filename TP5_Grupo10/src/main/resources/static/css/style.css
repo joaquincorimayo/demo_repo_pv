@@ -1,9 +1,10 @@
 @charset "ISO-8859-1";
 /* PARRAFOS */
 p {
-	text-align: center;
+/* 	text-align: center; */
 /* 	color: rgb(0, 128, 192); */
 /* 	font-family: Open Sans, sans-serif; */
+	font: caption;
 }
 /* HEADERS */
 h1, h2 {

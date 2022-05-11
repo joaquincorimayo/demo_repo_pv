@@ -5,13 +5,13 @@ public class Docente {
 	private String nombre;
 	private String apellido;
 	private String email;
-	private int telefono;
+	private String telefono;
 
 	public Docente() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public Docente(int legajo, String nombre, String apellido, String email, int telefono) {
+	
+	public Docente(int legajo, String nombre, String apellido, String email, String telefono) {
 		super();
 		this.legajo = legajo;
 		this.nombre = nombre;
@@ -52,15 +52,13 @@ public class Docente {
 		this.email = email;
 	}
 
-	public int getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	
-	
 
 	@Override
 	public String toString() {
