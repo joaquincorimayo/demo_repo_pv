@@ -1,17 +1,17 @@
 package ar.edu.unju.fi.tp5.model;
 
 public class Alumno {
-	private int dni;
+	private String dni;
 	private String nombre;
 	private String apellido;
 	private String email;
-	private int telefono;
+	private String telefono;
 
 	public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Alumno(int dni, String nombre, String apellido, String email, int telefono) {
+	public Alumno(String dni, String nombre, String apellido, String email, String telefono) {
 		super();
 		this.dni = dni;
 		this.nombre = nombre;
@@ -20,11 +20,11 @@ public class Alumno {
 		this.telefono = telefono;
 	}
 
-	public int getDni() {
+	public String getDni() {
 		return dni;
 	}
 
-	public void setDni(int dni) {
+	public void setDni(String dni) {
 		this.dni = dni;
 	}
 
@@ -52,11 +52,11 @@ public class Alumno {
 		this.email = email;
 	}
 
-	public int getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(int telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
 
@@ -65,5 +65,5 @@ public class Alumno {
 		return "Alumno [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email
 				+ ", telefono=" + telefono + "]";
 	}
-
+	
 }

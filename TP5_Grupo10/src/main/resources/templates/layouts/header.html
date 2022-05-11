@@ -16,18 +16,20 @@
 						<li class="nav-item"><a class="nav-link active"
 							aria-current="page" th:href="@{/agenda}">Agenda</a></li>
 						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" th:href="@{/beneficios}">Beneficios y Becas</a></li>
+							aria-current="page" th:href="@{/beneficios}">Beneficios y
+								Becas</a></li>
 						<li class="nav-item"><a class="nav-link active"
 							aria-current="page" th:href="@{/contacto}">Contáctanos</a></li>
-
 						<li class="nav-item dropdown"><a
 							class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
 							href="#" role="button" aria-expanded="false">Datos</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" th:href="@{/docente/listaDocentes}">Docentes</a></li>
-								<li><a class="dropdown-item" href="#">Alumnos</a></li>
-								<li><a class="dropdown-item" href="#">Becas</a></li>
+								<li><a class="dropdown-item"
+									th:href="@{/docente/listaDocentes}">Docentes</a></li>
+								<li><a class="dropdown-item" th:href="@{/alumno/listaAlumnos}">Alumnos</a></li>
 								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Becas</a></li>
+
 								<li><a class="dropdown-item" href="#">Cursos</a></li>
 							</ul></li>
 					</ul>

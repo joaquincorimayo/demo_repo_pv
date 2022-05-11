@@ -1,8 +1,6 @@
 package ar.edu.unju.fi.tp5.util;
 
 import java.util.ArrayList;
-import java.util.Optional;
-
 import ar.edu.unju.fi.tp5.model.Docente;
 
 public class ListaDocente {
@@ -25,18 +23,6 @@ public class ListaDocente {
 
 	public void setDocentes(ArrayList<Docente> docentes) {
 		this.docentes = docentes;
-	}
-	
-	public Docente buscarDocente(int legajo) {
-//		for (Docente docente : this.getDocentes()) {
-//			if(docente.getLegajo() == legajo) {
-//				
-//			}
-//		}
-		
-		Optional<Docente> docente = getDocentes().stream().filter(d -> d.getLegajo() == legajo).findFirst();
-		
-		return docente.get();
 	}
 	
 }

@@ -20,17 +20,17 @@ public class DocenteController {
 	private ListaDocente listaDocente = new ListaDocente();
 	
 	@GetMapping("/nuevo")
-	public String getFormularioAlumnoNuevoPage(Model model) {
+	public String getFormularioDocenteNuevoPage(Model model) {
 		model.addAttribute("docente", new Docente());
 		logger.info(
-				"Method: getFormularioAlumnoNuevoPage() - Information: Se envia un objeto Docente a la pagina nuevo_docente");
+				"Method: getFormularioDocenteNuevoPage() - Information: Se envia un objeto Docente a la pagina nuevo_docente");
 		return "nuevo_docente";
 	}
 
 	@PostMapping("/guardar")
 	public ModelAndView getListaDocentePage(@ModelAttribute("docente") Docente docente) {
 		ModelAndView mav = new ModelAndView("lista_docentes");
-		// recupero el arrayList y agrego un objeto alumno a lista
+		// recupero el arrayList y agrego un objeto docente a lista
 		if (listaDocente.getDocentes().add(docente)) {
 			logger.info("Method: getListaDocentePage() - Information: Se agregó un objeto al arrayList de docente");
 		}
