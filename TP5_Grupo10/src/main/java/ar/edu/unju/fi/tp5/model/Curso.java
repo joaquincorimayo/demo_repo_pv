@@ -13,6 +13,9 @@ import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class Curso {
+	private Docente docente;
+	private int dos;
+	
 	@Min(value = 1, message = "El valor mínimo es 1")
 	@Max(value = 9999, message = "El valor máximo permitido es 9999")
 	private int codigo;
@@ -33,8 +36,8 @@ public class Curso {
 	private int cantidadHoras;
 	@NotEmpty(message = "La modalidad no puede estar vacia")
 	private String modalidad;
-	private Docente docente;
-	private int dos;
+
+	
 	public Curso() {
 
 	}
